@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+     margin: 0;
+   }
+   .slot{
+    display: flex;
+    text-align: center;
+  }

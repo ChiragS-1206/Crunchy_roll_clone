@@ -1,0 +1,424 @@
+/* Base Styles - Full Screen Layout for Large Screens */
+.logo-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+    width: 100%;
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.brand-name1 {
+    color: #f47521;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: lowercase;
+}
+
+/* FULL SCREEN LAYOUT (Large Screens) */
+.info_create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 380px;
+    margin-top: 60px;
+    gap: 100px;
+    width: 50%;
+}
+
+.text_create {
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.create_input {
+    background-color: #1a1a1a;
+    color: white;
+    height: 40px;
+    width: 400px;
+    font-size: 22px;
+}
+
+.container {
+    width: 90%;
+    margin-left: 300px;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.form__input, .form__input2 {
+    width: 60%;
+    padding: 1em 1em 0.5em 1em;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+    caret-color: white;
+    margin-bottom: 20px;
+}
+
+.form__input2 {
+    margin-bottom: 60px;
+}
+.form__input {
+    margin-bottom: 35px;
+}
+input::placeholder {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    /* padding-left: -2rem; */
+  
+}
+input:focus::placeholder {
+  color: transparent; /* hides placeholder on focus */
+}
+
+label {
+    position: absolute;
+    font-size: 18px;
+    left: 0px;
+    top: 1em;
+    background-color: #121212;
+    color: white;
+    padding: 0 0.25em;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.form__input:focus + label,
+.form__input:not(:placeholder-shown) + label,
+.form__input2:focus + label,
+.form__input2:not(:placeholder-shown) + label {
+    top: -0.1em;
+    left: 0.20em;
+    font-size: 0.75em;
+    color: gray;
+}
+
+.form__input:hover,
+.form__input2:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form__input:focus,
+.form__input2:focus {
+    border-bottom: 2px solid #f47521;
+}
+
+.create_check {
+    display: flex;
+    color: gray;
+    position: relative;
+    left: 0px;
+    font-size: 14px;
+    gap: 5px;
+    margin-bottom: 60px;
+}
+
+.check_box {
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border: 2px solid gray;
+}
+
+.create_check:hover {
+    color: white;
+    cursor: pointer;
+}
+.error{
+    background-color: #262626;
+    margin-left: 1rem;
+    color: #f47521;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid #f47521;
+}
+
+.create_button {
+    background-color: transparent;
+    border: 2px solid grey;
+    color: gray;
+    border-radius: 40px;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.create_button:hover {
+    transition: .5s ease-out;
+    background-color: #f47521;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.create_sample {
+    display: flex;
+    color: white;
+    gap: 5px;
+    margin-left: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.create_sample p:nth-child(2) {
+    color: #f47521;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.create_sample p:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.create_sample2 {
+    color: gray;
+    width: 58%;
+    font-size: 12px;
+    margin-bottom: 150px;
+}
+
+.create_sample2 span:nth-child(1),
+.create_sample2 span:nth-child(2) {
+    color: #f47521;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.create_sample2 span:nth-child(1):hover,
+.create_sample2 span:nth-child(2):hover {
+    color: white;
+}
+
+.create_sample3 {
+    color: gray;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.create_sample3 p:nth-child(odd):hover,
+.create_sample3 p:nth-child(even):hover {
+    color: white;
+    cursor: pointer;
+}
+
+.create_end {
+    width: 80%;
+    margin-left: 160px;
+}
+
+.tag_create {
+    color: grey;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.login_acc {
+    display: flex;
+    color: white;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+
+.login_sample {
+    color: #f47521;
+    cursor: pointer;
+}
+
+.login_sample:hover {
+    color: white;
+}
+
+/* RESPONSIVE BREAKPOINT: Switch to Centered Layout */
+@media (max-width: 1024px) {
+    /* CENTERED SINGLE COLUMN LAYOUT */
+    .info_create {
+        margin: 60px auto 0;
+        margin-left: auto;
+        max-width: 500px;
+        width: 90%;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .form__input, .form__input2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .create_input, .create_button {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .create_check {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .create_sample {
+        justify-content: center;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .create_sample2 {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 80px;
+    }
+
+    .create_sample3 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .create_end {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tag_create {
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .login_acc {
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    label {
+        left: 1em;
+    }
+
+    .form__input:focus + label,
+    .form__input:not(:placeholder-shown) + label,
+    .form__input2:focus + label,
+    .form__input2:not(:placeholder-shown) + label {
+        left: 1.2em;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .info_create {
+        max-width: 400px;
+        gap: 30px;
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+    
+    .brand-name1 {
+        font-size: 28px;
+    }
+    
+    .logo1 {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .create_button {
+        height: 38px;
+        font-size: 15px;
+    }
+    
+    .create_sample3 {
+        gap: 15px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .info_create {
+        max-width: 350px;
+        gap: 25px;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    
+    .brand-name1 {
+        font-size: 24px;
+    }
+    
+    .logo1 {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .create_button {
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .create_sample3 {
+        gap: 10px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    .form__input, .form__input2 {
+        font-size: 0.9em;
+    }
+    
+    label {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Phones (max-width: 320px) */
+@media (max-width: 320px) {
+    .info_create {
+        max-width: 300px;
+        padding: 0 5px;
+    }
+    
+    .brand-name1 {
+        font-size: 20px;
+    }
+    
+    .logo1 {
+        width: 30px;
+        height: 30px;
+    }
+}

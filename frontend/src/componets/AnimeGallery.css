@@ -1,0 +1,43 @@
+.anime-gallery {
+    display: flex; /* Makes the cards align in a row */
+    overflow-x: auto;
+    /* white-space: nowrap; */
+    padding: 10px;
+    gap: 30px; /* Space between cards */
+    scroll-behavior: smooth;
+   
+  }
+  
+  .anime-gallery::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Chrome/Safari */
+  }
+  .anime-card {
+  flex: 0 0 250px; /* Prevent shrinking and allow horizontal scroll */
+}
+
+.buti1{
+  position: absolute;
+  background-color: rgba(26, 26, 26, .8);
+  height: 445px;
+  width: 80px;
+  cursor: pointer;
+  margin-left: 1400px;
+ 
+
+}
+.buti1:hover{
+  background-color: rgba(26, 26, 26, .9) ;
+}
+.buti2{
+  position: absolute;
+  background-color: rgba(26, 26, 26, .8);
+  height: 445px;
+  width: 80px;
+  cursor: pointer;
+ 
+  margin-left: -20px;
+
+}
+.buti2:hover{
+  background-color: rgba(26, 26, 26, .9) ;
+}

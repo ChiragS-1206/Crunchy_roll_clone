@@ -1,0 +1,67 @@
+.exclusive{
+    height: 350px;
+    width: 650px;
+    cursor: pointer;
+}
+.exclusive:hover{
+    opacity: .4;
+}
+.title20:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.set2{
+    display: flex;
+    margin-top: 40px;
+    
+    margin-left: 35px;
+    
+}
+.text1{
+    color: white;
+    font-family:sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 70px;
+    
+
+}
+.watch3{
+    background-color:#f47521 ;
+    color: black;
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    height: 47px;
+    width: 230px;
+    cursor: pointer;
+}
+.orangebook2{
+    cursor: pointer;
+    /* position: absolute; */
+    /* bottom: 140px; */
+    /* left: 300px; */
+    /* border: 3px solid #f47521; */
+    height: 20px;
+    padding: 8px;
+}
+.line1{
+    display: flex;
+    border: 3px solid #f47521;
+    width: 222px;
+    padding-top:5px ;
+    height: 35px;
+}
+.hi{
+    color: #f47521;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.box2{
+    display: flex;
+    gap: 15px;
+}

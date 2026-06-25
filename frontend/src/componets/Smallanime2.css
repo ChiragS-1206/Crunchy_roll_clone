@@ -1,0 +1,23 @@
+.set {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.hehe {
+    margin-top: 5px;
+    font-family: "Arial Narrow", "Tahoma", sans-serif; /* Lighter system fonts */
+    font-weight: 400; /* Use 400 as these fonts don’t support 300 */
+    color: #666; /* Optional: Lighter color for a less bold look */
+}
+
+.high:hover {
+    opacity: .5;
+}
+.title{
+    font-family:monospace; /* Lighter system fonts */
+    font-weight: 400;
+
+}

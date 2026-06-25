@@ -1,0 +1,41 @@
+.sample1{
+    height: 100px;
+    width: 170px;
+    margin-top: 10px;
+}
+
+pre{
+    color: white;
+}
+.new{
+    display: flex;
+    width: 35%;
+    
+    
+    
+   
+}
+.neweptext{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.today{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: gray;
+}
+.new:hover{
+    background-color: #1A1A1A;
+    cursor: pointer;
+    
+}
+.new:hover .today .neweptext .pre2{
+    opacity: 0;
+    display: none;
+}
+
+.pre2{
+    color: gray;
+}

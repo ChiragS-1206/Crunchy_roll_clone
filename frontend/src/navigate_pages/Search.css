@@ -1,0 +1,334 @@
+.Search_bar {
+    color: aliceblue;
+    font-weight: bold;
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    position: relative; /* IMPORTANT: Creates positioning context */
+    z-index: 10; /* Base z-index for search bar */
+}
+
+.search_input {
+    height: 50px;
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; /* Needed for z-index */
+    z-index: 11; /* Above the dropdown */
+}
+
+.search_input:focus {
+    outline: none;
+    border-bottom: 2px solid #f47521;
+}
+
+/* PERFECT: Same pattern - Desktop has 40px gap (150px - 110px = 40px) */
+.suggestions {
+    position: absolute;
+    top: 150px; /* 110px + 40px gap = 150px */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 999; /* High z-index to appear above everything */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.suggestion-item {
+    padding: 15px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+    z-index: 1000; /* Ensure clickable */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestion-item.clickable {
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.suggestion-item.clickable:hover {
+    background-color: #3a3a3a;
+    border-left: 4px solid #f47521;
+}
+
+.suggestion-item.clickable:focus {
+    background-color: #3a3a3a;
+    border-left: 4px solid #f47521;
+    outline: 2px solid #f47521;
+    outline-offset: 2px;
+}
+
+.suggestion-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.suggestion-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+/* Loading and error states */
+.suggestion-item.loading {
+    color: #f47521;
+    font-style: italic;
+    cursor: default;
+    justify-content: flex-start;
+}
+
+.suggestion-item.error {
+    color: #ff4444;
+    font-style: italic;
+    cursor: default;
+    justify-content: flex-start;
+}
+
+.loading-icon, .error-icon, .no-results-icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+.anime-info {
+    padding: 0.625rem;
+    height: calc(27.8125rem - 25.125rem);
+    display: flex
+;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Anime info styling */
+.anime-info {
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.anime-title {
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+/* Navigation indicator */
+.nav-indicator {
+    color: #f47521;
+    font-weight: bold;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    margin-left: 10px;
+}
+
+.suggestion-item.clickable:hover .nav-indicator {
+    opacity: 1;
+}
+
+.no-results {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Keep all your existing styles */
+.lastbox2 {
+    background: linear-gradient(to bottom, #0f0f0f, #121a1f, #1b2d36);
+    padding-left: 50px;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1; /* Lower z-index */
+}
+
+.search_hr {
+    width: 90%;
+    margin: 20px;
+    color: gray;
+}
+
+.tag_create2 {
+    color: grey;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+/* FIXED: Same proportional pattern for all screen sizes */
+@media (max-width: 1024px) {
+    .Search_bar {
+        height: 90px;
+    }
+    .search_input {
+        height: 40px;
+        width: 70%;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    .suggestions {
+        top: 210px; /* Your exact value - unchanged */
+        width: 70%;
+    }
+    .suggestion-item {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    .nav-indicator {
+        font-size: 1.1em;
+    }
+    .lastbox2 {
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+    .search_hr {
+        margin: 15px;
+    }
+    .tag_create2 {
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Search_bar {
+        height: 70px;
+    }
+    .search_input {
+        height: 35px;
+        width: 80%;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .suggestions {
+        top: 220px; /* Your exact value - unchanged */
+        width: 80%;
+    }
+    .suggestion-item {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .anime-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+    .nav-indicator {
+        font-size: 1em;
+        margin-left: 5px;
+    }
+    .lastbox2 {
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+    .search_hr {
+        width: 85%;
+        margin: 10px;
+    }
+    .tag_create2 {
+        font-size: 14px;
+        padding: 6px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Search_bar {
+        height: 60px;
+    }
+    .search_input {
+        height: 30px;
+        width: 90%;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .suggestions {
+        top: 180px; /* Your exact value - unchanged */
+        width: 90%;
+    }
+    .suggestion-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .nav-indicator {
+        font-size: 0.9em;
+        margin-left: 3px;
+    }
+    .lastbox2 {
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+    .search_hr {
+        width: 80%;
+        margin: 8px;
+    }
+    .tag_create2 {
+        font-size: 12px;
+        padding: 4px;
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Search_bar {
+        height: 50px;
+    }
+    .search_input {
+        height: 25px;
+        width: 95%;
+        margin-top: 3px;
+        font-size: 14px;
+    }
+    .suggestions {
+        top: 150px; /* Your exact value - unchanged */
+        width: 95%;
+    }
+    .suggestion-item {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    .nav-indicator {
+        font-size: 0.8em;
+        margin-left: 2px;
+    }
+    .lastbox2 {
+        padding-left: 5px;
+        padding-top: 30px;
+    }
+    .search_hr {
+        width: 75%;
+        margin: 5px;
+    }
+    .tag_create2 {
+        font-size: 10px;
+        padding: 3px;
+        padding-left: 1px;
+    }
+}

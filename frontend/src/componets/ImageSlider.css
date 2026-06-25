@@ -1,0 +1,211 @@
+.spy{
+    width: 100%;
+    height: 650px;
+}
+
+
+.less{
+    position: absolute;
+    bottom: 320px;
+    left: 3px;
+    cursor: pointer;
+    
+}
+.great{
+    background: none;
+    position: absolute;
+    bottom: 320px;
+    right: 3px;
+    cursor: pointer;
+    
+
+}
+.watch{
+    background-color:#f47521 ;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #f47521;
+    position: absolute;
+    bottom: 130px;
+    left: 70px;
+    cursor: pointer;
+}
+.orangebook{
+    cursor: pointer;
+    position: absolute;
+    bottom: 130px;
+    left: 300px;
+    border: 3px solid #f47521;
+    height: 20px;
+    padding: 8px;
+}
+@media (max-width: 500px) and (min-width: 300px){
+    .spy{
+    width: 350%;
+    height: 650px;
+    }
+    .less{
+    bottom: 180px;
+    left: 3px;
+    
+    }
+    .great{
+    
+    bottom: 180px;
+    right: -1250px;
+    
+    }
+    .watch{
+    
+    bottom: 20px;
+    
+    }
+    .orangebook{
+    
+    bottom: 20px;
+    
+}
+
+
+
+
+
+}
+@media (max-width:300px) {
+    .spy{
+    width: 400%;
+    height: 650px;
+    }
+    .less{
+    bottom: 180px;
+    left: 3px;
+    
+    }
+    .great{
+    
+    bottom: 180px;
+    right: -880px;
+    
+    }
+    .watch{
+    
+    bottom: 20px;
+    
+    }
+    .orangebook{
+    
+    bottom: 20px;
+    
+}
+    
+
+
+} /* orignal upper */
+
+ /* Main image */
+/* .spy {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: cover;
+} */
+
+/* Arrows */
+/* .less,
+.great {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 1;
+} */
+
+/* .less {
+  left: 15px;
+} */
+/* 
+.great {
+  right: 15px;
+} */
+
+/* Watch button */
+/* .watch {
+  background-color: #f47521;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 16px;
+  border: 1px solid #f47521;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+} */
+
+/* Bookmark icon */
+/* .orangebook {
+  cursor: pointer;
+  position: absolute;
+  bottom: 80px;
+  left: 250px;
+  border: 3px solid #f47521;
+  height: 24px;
+  padding: 8px;
+  z-index: 2;
+} */
+
+/* Tablets (768px and down) */
+/* @media (max-width: 768px) {
+  .spy {
+    max-height: 500px;
+  } */
+
+  /* .less, .great {
+    width: 30px;
+    height: 30px;
+    bottom: 45%;
+  } */
+/* 
+  .watch {
+    font-size: 14px;
+    padding: 8px 12px;
+    bottom: 40px;
+    left: 15px;
+  } */
+
+
+/* } */
+
+/* Mobile (480px and below) */
+/* @media (max-width: 480px) {
+  .spy {
+    max-height: 400px;
+  }
+
+  .less, .great {
+    width: 25px;
+    height: 25px;
+    bottom: 42%;
+  }
+
+  .watch {
+    font-size: 12px;
+    padding: 6px 10px;
+    bottom: 20px;
+    left: 10px;
+  }
+
+  .orangebook {
+    bottom: 20px;
+    left: 140px;
+    height: 20px;
+    padding: 5px;
+  }
+} */

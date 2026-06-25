@@ -1,0 +1,220 @@
+/* AnimeCard3 Individual Card Styles */
+.anime-card3 {
+  background: #1a1a1a;
+  width: 15.625rem;
+  height: 27.8125rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* border: 1px solid #333; */
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.anime-card3:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  /* border-color: #007bff; */
+}
+
+/* Image Styles - Covers most of the card */
+.anime-image2 {
+  width: 100%;
+  flex: 1; /* Take up all remaining space */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.anime-card3:hover .anime-image2 {
+  transform: scale(1.05);
+}
+
+/* Info Section - Title with more space */
+.anime-info3 {
+  padding: 12px 12px 8px 12px; /* Added more top padding for space */
+  background: black;
+  flex-shrink: 0; /* Don't shrink */
+}
+
+.anime-info3 h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.3; /* Better line height for readability */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Allow 2 lines for full title */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word; /* Break long words if needed */
+}
+
+/* Show subtitle if needed */
+.anime-info3 p {
+  margin: 4px 0 0 0; /* Small margin from title */
+  color: #b3b3b3;
+  font-size: 12px;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Single line for subtitle */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove Button - Fixed at bottom */
+.remove-btn {
+  background: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: .5rem; /* No border radius to fit bottom edge */
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  flex-shrink: 0; /* Don't shrink */
+  margin: 0; /* No margins */
+}
+
+.remove-btn:hover:not(:disabled) {
+  background: #d70015;
+}
+
+.remove-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+/* Deleting State */
+.anime-card3.deleting {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.anime-card3.deleting .remove-btn {
+  background: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .anime-card3 {
+    width: 12.5rem;
+    height: 22.25rem;
+  }
+  
+  .anime-info3 {
+    padding: 10px 10px 6px 10px;
+  }
+  
+  .anime-info3 h3 {
+    font-size: 15px;
+  }
+  
+  .anime-info3 p {
+    font-size: 11px;
+  }
+  
+  .remove-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .anime-card3 {
+    width: 10rem;
+    height: 17.8rem;
+  }
+  
+  .anime-info3 {
+    padding: 8px 8px 6px 8px;
+  }
+  
+  .anime-info3 h3 {
+    font-size: 14px;
+  }
+  
+  .anime-info3 p {
+    font-size: 10px;
+  }
+  
+  .remove-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-card3 {
+    width: 7.5rem;
+    height: 13.35rem;
+  }
+  
+  .anime-info3 {
+    padding: 6px 6px 4px 6px;
+  }
+  
+  .anime-info3 h3 {
+    font-size: 12px;
+  }
+  
+  .anime-info3 p {
+    font-size: 9px;
+  }
+  
+  .remove-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .anime-card3 {
+    width: 6.25rem;
+    height: 11.125rem;
+  }
+  
+  .anime-info3 {
+    padding: 5px 5px 3px 5px;
+  }
+  
+  .anime-info3 h3 {
+    font-size: 11px;
+  }
+  
+  .anime-info3 p {
+    font-size: 8px;
+  }
+  
+  .remove-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
+
+/* Loading State */
+.anime-card3.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.anime-card3.loading .anime-image2 {
+  background: #333;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}

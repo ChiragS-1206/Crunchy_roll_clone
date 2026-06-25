@@ -1,0 +1,161 @@
+/* Main container with proper positioning */
+.bookmark_container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px; /* Space from continue watching section */
+  clear: both;
+}
+
+.bookmark_box {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  position: relative;
+  background: #000; /* Ensure background */
+}
+
+.bookmark_heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.bookmark_heading img {
+  width: 40px;
+  height: 40px;
+}
+
+.bookmark_heading h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.bookmark_heading2 {
+  color: #f47521;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.watchlist {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+/* Gallery cards with proper spacing */
+.anime-cards {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.anime-cards > div {
+  margin-bottom: 40px;
+}
+
+/* State messages styling */
+.loading-state,
+.empty-state,
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.empty-state p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.empty-state p:first-child {
+  font-weight: bold;
+  color: #f47521;
+}
+
+/* Delete overlay */
+.delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.delete-message {
+  background: #333;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.delete-message p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bookmark_container {
+    margin-top: 40px;
+  }
+  
+  .bookmark_box {
+    padding: 15px;
+    margin: 0 10px;
+  }
+  
+  .bookmark_heading {
+    gap: 10px;
+  }
+  
+  .bookmark_heading h1 {
+    font-size: 1.5rem;
+  }
+  
+  .bookmark_heading2 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .anime-cards {
+    margin-top: 30px;
+  }
+  
+  .anime-cards > div {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookmark_container {
+    margin-top: 30px;
+  }
+  
+  .bookmark_box {
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .bookmark_heading img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .bookmark_heading h1 {
+    font-size: 1.3rem;
+  }
+  
+  .anime-cards > div {
+    margin-bottom: 25px;
+  }
+}

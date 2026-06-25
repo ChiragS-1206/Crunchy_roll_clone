@@ -1,0 +1,881 @@
+/* COMPLETE FINAL CSS - All Fixes Applied Including Middle Card Black Background Fix */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+.prem_container_orig {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+
+/* NAVIGATION - Original Full Screen Layout */
+.prem_nav {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    position: relative;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.brand-name {
+    color: #f47521;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.prem_nav2 {
+    display: flex;
+    gap: 15px;
+}
+
+.prem_navbut1 {
+    height: 50px;
+    margin-top: 8px;
+    width: 90px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prem_navbut1:hover {
+    background-color: #1a1a1a;
+    transition: .5s ease;
+}
+
+.prem_navbut2 {
+    height: 40px;
+    margin-top: 10px;
+    width: 130px;
+    background-color: transparent;
+    color: gray;
+    font-weight: bold;
+    border: 3px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.prem_navbut2:hover {
+    border: 3px solid white;
+    color: white;
+}
+
+/* HERO SECTION - Original Full Screen Layout (COMPLETELY FIXED) */
+.prem_contianer1 {
+    background-image: url("../componets/photos/premiumboard.jpeg");
+    height: 850px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.prem_contianer2 {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    gap: 20px;
+    left: 200px;
+    top: 150px;
+}
+
+.prem_cont2_1 {
+    font-size: 45px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.prem_cont2_1 p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.prem_contbut1 {
+    width: 300px;
+    height: 40px;
+    background-color: goldenrod;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prem_contbut1:hover {
+    background-color: rgb(243, 175, 3);
+}
+
+.pre_orange {
+    color: #FF6200;
+    cursor: pointer;
+}
+
+.pre_orange:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.prem_cont2_2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 580px;
+    left: 625px;
+    text-align: center;
+    color: white;
+}
+
+.pre_big {
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* FEATURES SECTION - Original Full Screen Layout (FIXED) */
+.prem_contianer3 {
+    background-image: url("../componets/photos/prem_board2.jpeg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.prem_box {
+    position: absolute;
+    display: flex;
+    width: 32%;
+    left: 200px;
+    top: 60px;
+}
+
+.prem_contianer3_1, .prem_contianer3_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.prem_contianer3_1_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prem_image1 {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.prem_centext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+.prem_contianer3_1_1:hover img {
+    transform: translateY(-10px);
+}
+
+.prem_contianer3_1_1:hover {
+    color: white;
+}
+
+/* PRICING SECTION - FIXED MIDDLE CARD AND NO OVERLAPPING */
+.prem_contianer4 {
+    position: relative;
+    margin-top: 150px;
+    background-image: url("../componets/photos/prem_board3.jpeg");
+    height: 1400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prem_contianer4_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    height: 100%;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.premboard4_title {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    z-index: 10;
+}
+
+.prem_contianer4_1_1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+}
+
+/* CARD 1 - FAN (Black Background) */
+.prem_contianer4_1_1_1 {
+    background-color: #1a1a1a !important;
+    width: 320px;
+    height: 480px;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/* CARD 2 - MEGA FAN (MIDDLE - COMPLETELY FIXED) */
+.prem_contianer4_1_1_2 {
+    background-color: #1a1a1a !important; /* FORCE black background */
+    color: white !important; /* ENSURE white text */
+    width: 320px;
+    height: 520px;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex !important; /* FORCE display */
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    position: relative;
+    transform: translateY(-20px); /* Elevated position */
+    overflow: hidden;
+    justify-content: space-between;
+    z-index: 5 !important; /* ENSURE it's visible */
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* ADDED shadow for visibility */
+}
+
+/* CARD 3 - MEGA FAN YEARLY (Black Background) */
+.prem_contianer4_1_1_2:last-child {
+    background-color: #1a1a1a !important;
+    width: 320px;
+    height: 480px;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/* CARD TEXT CONTENT - FIXED OVERFLOW ISSUES */
+.prem_contianer4_1_1_1 p,
+.prem_contianer4_1_1_2 p {
+    margin: 3px 0;
+    font-size: 12px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.prem_contianer4_1_1_1 p:first-child,
+.prem_contianer4_1_1_2 p:first-child {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.prem_contianer4_1_1_1 p:nth-child(2),
+.prem_contianer4_1_1_2 p:nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.prem_contianer4_1_1_1 p:nth-child(3),
+.prem_contianer4_1_1_2 p:nth-child(3) {
+    font-size: 11px;
+    color: gray;
+    margin: 3px 0;
+}
+
+.prem_contianer4_1_1_1 p:nth-child(5),
+.prem_contianer4_1_1_2 p:nth-child(5) {
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.prem_contianer4_1_1_1 p:nth-child(6),
+.prem_contianer4_1_1_2 p:nth-child(6) {
+    margin: 8px 0;
+    font-size: 11px;
+    padding: 0 3px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.prem_contianer4_1_1_1 p:nth-child(7),
+.prem_contianer4_1_1_2 p:nth-child(7) {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* MIDDLE CARD TEXT - ENSURE PROPER STYLING */
+.prem_contianer4_1_1_2:first-of-type p {
+    color: white !important;
+    margin: 3px 0;
+    font-size: 12px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.prem_contianer4_1_1_2:first-of-type p:first-child {
+    font-size: 24px !important;
+    margin-top: 10px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.prem_contianer4_1_1_2:first-of-type p:nth-child(2) {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    margin: 5px 0 !important;
+    color: white !important;
+}
+
+/* MOST POPULAR TAG - ENHANCED VISIBILITY */
+.prem_contianer4_1_1_2 h3:first-child {
+    background: goldenrod !important;
+    color: black !important;
+    padding: 8px 16px !important;
+    border-radius: 12px;
+    margin: 10px 0 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(218, 165, 32, 0.3);
+    border: 1px solid #DAA520;
+}
+
+/* BUTTON - BETTER SIZING */
+.prem_board3_but_1 {
+    border: 2px solid goldenrod;
+    background-color: transparent;
+    height: 40px;
+    width: 85%;
+    max-width: 260px;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 8px 0;
+    flex-shrink: 0;
+}
+
+.prem_board3_but_1:hover {
+    color: gold;
+    border: 2px solid gold;
+}
+
+/* MIDDLE CARD BUTTON - PROPER STYLING */
+.prem_contianer4_1_1_2:first-of-type .prem_board3_but_1 {
+    border: 2px solid goldenrod !important;
+    background-color: transparent !important;
+    height: 40px;
+    width: 85%;
+    max-width: 260px;
+    color: goldenrod !important;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 8px 0;
+    flex-shrink: 0;
+}
+
+.prem_contianer4_1_1_2:first-of-type .prem_board3_but_1:hover {
+    color: gold !important;
+    border: 2px solid gold !important;
+    background-color: rgba(255, 215, 0, 0.1) !important;
+}
+
+/* Bottom Content - Proper Spacing After Cards */
+.premboard4_content {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    font-weight: lighter;
+    color: black;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 1;
+}
+
+/* GALLERY SECTION - Ensure Proper Spacing After Pricing */
+.prem_container5 {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    z-index: 1;
+    clear: both;
+}
+
+.prem_container5 p:first-child {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prem_container5 p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.prem_container5_1 {
+    margin-top: 30px;
+    width: 80%;
+    height: 340px;
+}
+
+/* IMAGE SECTION - Original Layout (FIXED) */
+.prem_container6 {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.prem_container6_1 {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prem_container6_2 {
+    position: absolute;
+    top: 250px;
+    right: 250px;
+    color: black;
+    text-align: left;
+}
+
+.prem_container6_2 p:first-child {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.prem_container6_2 p:not(:first-child) {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* FOOTER SECTION - Original Layout (FIXED) */
+.prem_container7 {
+    font-family: sans-serif;
+    margin-top: 150px;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.prem_container7_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.prem_container7_1 p:first-child {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.prem_container7_1 p:last-child {
+    font-size: 25px;
+    color: white;
+}
+
+.prem_container7_1 span {
+    color: #FF6200;
+    cursor: pointer;
+}
+
+.prem_container7_1 span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.prem_container7_3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.prem_container7_2 {
+    display: flex;
+    gap: 15px;
+    font-weight: lighter;
+    color: gray;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.prem_container7_2 p {
+    cursor: pointer;
+}
+
+.prem_container7_2 p:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.prem_container7_hr {
+    color: white;
+    width: 680px;
+    margin-top: -130px;
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+.INROW7 {
+    display: flex;
+    gap: 500px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.tag_create7 {
+    color: gray;
+    font-size: 14px;
+}
+
+.INROW7 select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.INROW7 h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Add clearfix to prevent floating issues */
+.prem_container_orig::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* RESPONSIVE DESIGN - Only for Smaller Screens */
+@media (max-width: 1024px) {
+    .prem_nav {
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0 20px;
+    }
+    
+    .prem_contianer1 {
+        height: 600px;
+        padding: 0 20px 50px;
+        margin-bottom: 50px;
+    }
+    
+    .prem_contianer2 {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 100px auto 0;
+        text-align: center;
+    }
+    
+    .prem_cont2_2 {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        top: auto;
+        margin-top: 30px;
+    }
+    
+    .prem_contianer3 {
+        height: auto;
+        padding: 80px 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .prem_box {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .prem_contianer4 {
+        height: auto;
+        padding: 100px 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .prem_contianer4_1 {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .prem_contianer4_1_1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+    
+    .prem_contianer4_1_1_1,
+    .prem_contianer4_1_1_2 {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        min-height: 400px;
+        margin: 0 auto 20px;
+        transform: none;
+    }
+    
+    .prem_contianer4_1_1_2:first-of-type {
+        transform: none;
+        margin: 0 auto 20px;
+    }
+    
+    .premboard4_title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .premboard4_content {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 30px;
+        width: 95%;
+    }
+    
+    .prem_container5 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .prem_container6 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .prem_container6_2 {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+        background: rgba(0,0,0,0.7);
+        padding: 20px;
+    }
+    
+    .prem_container7 {
+        width: 90%;
+        margin-left: 5%;
+        gap: 80px;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    
+    .INROW7 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .prem_container7_hr {
+        width: 100%;
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prem_nav {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .prem_contianer1 {
+        height: 500px;
+    }
+    
+    .prem_cont2_1 {
+        font-size: 32px;
+    }
+    
+    .prem_contbut1 {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .prem_image1 {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .prem_centext {
+        font-size: 16px;
+    }
+    
+    .premboard4_title {
+        font-size: 32px;
+    }
+    
+    .prem_container5 p:first-child {
+        font-size: 50px;
+    }
+    
+    .prem_container7_2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prem_contianer1 {
+        padding: 0 15px 30px;
+        height: 400px;
+    }
+    
+    .prem_cont2_1 {
+        font-size: 26px;
+    }
+    
+    .prem_image1 {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .prem_centext {
+        font-size: 14px;
+    }
+    
+    .prem_contianer4_1_1_1, .prem_contianer4_1_1_2 {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .premboard4_title {
+        font-size: 28px;
+    }
+    
+    .prem_container5 p:first-child {
+        font-size: 40px;
+    }
+    
+    .prem_container7_1 p:first-child {
+        font-size: 35px;
+    }
+    
+    .prem_container7_1 p:last-child {
+        font-size: 20px;
+    }
+}

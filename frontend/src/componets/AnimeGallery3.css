@@ -1,0 +1,144 @@
+/* Gallery Container - UPDATED */
+.anime-gallery-container3 {
+  position: relative;
+  width: calc(100vw - (100vw - 100%) / 2); /* Extend only to the right */
+  margin-right: calc(-50vw + 50%); 
+  /* Extend to right screen edge */
+  overflow: hidden;
+  display: block;
+}
+
+/* Base Styles for the Anime Gallery */
+.anime-gallery3 {
+  display: flex;
+  overflow-x: auto;
+  padding: 0.625rem;
+  gap: 0.9375rem;
+  scroll-behavior: smooth;
+  width: 100%; /* Changed from max-content to 100% */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* border: 2px solid greenyellow; */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.anime-gallery3::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure cards maintain their size */
+.anime-gallery3 .anime-card3 {
+  flex: 0 0 15.625rem;
+  height: 27.8125rem;
+  /* border: 1px solid pink; */
+}
+
+/* Navigation Buttons */
+.scroll-btn-right3,
+.scroll-btn-left3 {
+  position: absolute;
+  background-color: rgba(26, 26, 26, 0.8);
+  width: 5rem;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn-right3 {
+  right: 0;
+}
+
+.scroll-btn-left3 {
+  left: 0;
+}
+
+/* Hover effect */
+.scroll-btn-right3:hover,
+.scroll-btn-left3:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* Arrow styles for right button */
+.scroll-btn-right3::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 3px;
+}
+
+/* Arrow styles for left button */
+.scroll-btn-left3::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 15px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-right: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 699.98px) {
+  .scroll-btn-right3,
+  .scroll-btn-left3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .anime-gallery3 .anime-card3 {
+    flex: 0 0 12.5rem;
+    height: 22.25rem;
+  }
+  
+  .scroll-btn-right3,
+  .scroll-btn-left3 {
+    width: 4rem;
+  }
+  
+  .scroll-btn-right3::after {
+    border-left: 12px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  
+  .scroll-btn-left3::after {
+    border-right: 12px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .anime-gallery3 .anime-card3 {
+    flex: 0 0 10rem;
+    height: 17.8rem;
+  }
+  
+  .scroll-btn-right3,
+  .scroll-btn-left3 {
+    width: 3.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-gallery3 .anime-card3 {
+    flex: 0 0 7.5rem;
+    height: 13.35rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .anime-gallery3 .anime-card3 {
+    flex: 0 0 6.25rem;
+    height: 11.125rem;
+  }
+}

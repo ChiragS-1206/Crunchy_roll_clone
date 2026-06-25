@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Varela Round';
+  src: url('./assets/fonts/varela-round.ttf') format('truetype');
+}
+
+.slider-container {
+  width: 100%;
+}
+
+.spy {
+  width: 100%;
+  height: auto;
+  max-height: 39.6rem; /* 36rem * 1.1 */
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.spy > img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.less,
+.great {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.925rem; /* 1.75rem * 1.1 */
+  height: 1.925rem; /* 1.75rem * 1.1 */
+  cursor: pointer;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.less {
+  left: 0.55rem; /* 0.5rem * 1.1 */
+}
+
+.great {
+  right: 0.55rem; /* 0.5rem * 1.1 */
+}
+
+.less img, .great img {
+  width: 66%; /* 60% * 1.1 */
+  height: 66%; /* 60% * 1.1 */
+  object-fit: contain;
+}
+
+.slider-controls-bottom {
+  position: absolute;
+  bottom: 16.5%; /* 15% * 1.1 */
+  left: 4.4%; /* 4% * 1.1 */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.825rem; /* 0.75rem * 1.1 */
+  flex-wrap: nowrap;
+  max-width: 101.2%; /* 92% * 1.1 */
+}
+
+.watch {
+  background-color: #f47521;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 0.858rem; /* 0.78rem * 1.1 */
+  padding: 0.44rem 0.88rem; /* 0.4rem * 1.1, 0.8rem * 1.1 */
+  border: 1.1px solid #f47521; /* 1px * 1.1 */
+  cursor: pointer;
+  border-radius: 0.275rem; /* 0.25rem * 1.1 */
+  white-space: nowrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 13.2rem; /* 12rem * 1.1 */
+  box-sizing: border-box;
+}
+
+.orangebook {
+  cursor: pointer;
+  border: 3.3px solid #f47521; /* 3px * 1.1 */
+  height: 1.65rem; /* 1.5rem * 1.1 */
+  padding: 0.275rem; /* 0.25rem * 1.1 */
+  border-radius: 0.275rem; /* 0.25rem * 1.1 */
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .spy {
+    max-height: 33rem; /* 30rem * 1.1 */
+  }
+  .less, .great {
+    width: 1.65rem; /* 1.5rem * 1.1 */
+    height: 1.65rem; /* 1.5rem * 1.1 */
+  }
+  .watch {
+    font-size: 0.803rem; /* 0.73rem * 1.1 */
+    padding: 0.385rem 0.77rem; /* 0.35rem * 1.1, 0.7rem * 1.1 */
+    max-width: 13rem; /* 10rem * 1.1 */
+  }
+  .orangebook {
+    height: 1.54rem; /* 1.4rem * 1.1 */
+    padding: 0.242rem; /* 0.22rem * 1.1 */
+  }
+  .slider-controls-bottom {
+    gap: 0.66rem; /* 0.6rem * 1.1 */
+    bottom: 16.5%; /* 15% * 1.1 */
+    left: 4.4%; /* 4% * 1.1 */
+  }
+}
+
+@media (max-width: 768px) {
+  .spy {
+    max-height: 27.5rem; /* 25rem * 1.1 */
+  }
+  .less, .great {
+    width: 1.375rem; /* 1.25rem * 1.1 */
+    height: 1.375rem; /* 1.25rem * 1.1 */
+  }
+  .watch {
+    font-size: 0.748rem; /* 0.68rem * 1.1 */
+    padding: 0.33rem 0.66rem; /* 0.3rem * 1.1, 0.6rem * 1.1 */
+    max-width: 11rem; /* 9rem * 1.1 */
+  }
+  .orangebook {
+    height: 1.43rem; /* 1.3rem * 1.1 */
+    padding: 0.22rem; /* 0.2rem * 1.1 */
+  }
+  .slider-controls-bottom {
+    gap: 0.55rem; /* 0.5rem * 1.1 */
+    bottom: 13.2%; /* 12% * 1.1 */
+    left: 4.4%; /* 4% * 1.1 */
+  }
+}
+
+@media (max-width: 480px) {
+  .spy {
+    max-height: 22rem; /* 20rem * 1.1 */
+  }
+  .less, .great {
+    width: 1.1rem; /* 1rem * 1.1 */
+    height: 1.1rem; /* 1rem * 1.1 */
+  }
+  .watch {
+    font-size: 0.682rem; /* 0.62rem * 1.1 */
+    padding: 0.275rem 0.55rem; /* 0.25rem * 1.1, 0.5rem * 1.1 */
+    max-width: 10rem; /* 8rem * 1.1 */
+  }
+  .orangebook {
+    height: 1.32rem; /* 1.2rem * 1.1 */
+    padding: 0.198rem; /* 0.18rem * 1.1 */
+  }
+  .slider-controls-bottom {
+    gap: 0.44rem; /* 0.4rem * 1.1 */
+    bottom: 11%; /* 10% * 1.1 */
+    left: 4.4%; /* 4% * 1.1 */
+  }
+}
+
+@media (max-width: 400px) {
+  .spy {
+    max-height: 16.5rem; /* 15rem * 1.1 */
+  }
+  .less, .great {
+    width: 0.9625rem; /* 0.875rem * 1.1 */
+    height: 0.9625rem; /* 0.875rem * 1.1 */
+  }
+  .watch {
+    font-size: 0.605rem; /* 0.55rem * 1.1 */
+    padding: 0.22rem 0.44rem; /* 0.2rem * 1.1, 0.4rem * 1.1 */
+    max-width: 9rem; /* 7rem * 1.1 */
+  }
+  .orangebook {
+    height: 1.21rem; /* 1.1rem * 1.1 */
+    padding: 0.165rem; /* 0.15rem * 1.1 */
+  }
+  .slider-controls-bottom {
+    gap: 0.33rem; /* 0.3rem * 1.1 */
+    bottom: 8.8%; /* 8% * 1.1 */
+    left: 4.4%; /* 4% * 1.1 */
+  }
+}

@@ -1,0 +1,60 @@
+.anime-gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    scroll-behavior: smooth;
+    width: 100%; /* Full screen width */
+    justify-content: center; /* Center the cards */
+    box-sizing: border-box;
+}
+
+.anime-gallery2::-webkit-scrollbar {
+    display: none;
+}
+
+.anime-card {
+    flex: 0 0 calc(16.66% - 10px); /* Base ~6 cards per row, adjusted for gap */
+    box-sizing: border-box;
+    max-width: calc(16.66% - 10px); /* Prevent stretching beyond intended width */
+}
+
+@media (max-width: 1200px) {
+    .anime-card {
+        flex: 0 0 calc(20% - 8px); /* Reduce to ~5 cards per row */
+    }
+    .anime-gallery2 {
+        padding: 8px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .anime-card {
+        flex: 0 0 calc(25% - 6px); /* Reduce to ~4 cards per row */
+    }
+    .anime-gallery2 {
+        padding: 6px;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .anime-card {
+        flex: 0 0 calc(50% - 4px); /* Reduce to ~2 cards per row */
+    }
+    .anime-gallery2 {
+        padding: 4px;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 400px) {
+    .anime-card {
+        flex: 0 0 calc(100% - 2px); /* Reduce to ~1 card per row */
+    }
+    .anime-gallery2 {
+        padding: 2px;
+        gap: 2px;
+    }
+}

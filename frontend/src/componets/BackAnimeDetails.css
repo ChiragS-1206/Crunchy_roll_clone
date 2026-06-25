@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+.anime-details{
+  color: white;
+  height: auto;
+  background-color: #000000;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.watch_container_1 {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.back-anime-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.watch_container_1_1 {
+  position: absolute;
+  width: 90%;
+  margin-left: 80px;
+  top: 50px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.watch_title {
+  font-size: 40px;
+}
+
+.watch_subtitle {
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+/* FIXED: All stars in one single row for all screen sizes */
+.star-rating {
+  margin-top: 10px;
+  user-select: none;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.star-line-1,
+.star-line-2 {
+  display: flex !important;
+  align-items: center;
+  margin-top: 0;
+  margin-right: 0;
+  visibility: visible !important;
+}
+
+.star_mes {
+  padding-top: 0;
+  padding-left: 15px;
+  font-size: 16px;
+  visibility: visible !important;
+  align-self: center;
+}
+
+.star_custom {
+  font-size: 38px !important;
+  cursor: pointer;
+  color: lightgray;
+  visibility: visible !important;
+  display: inline-block !important;
+  margin-right: 2px;
+}
+
+.watch_button_1{
+  height: 30px;
+  /* position: relative; */
+}
+
+.watch1 {
+  background-color: #f47521;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  top: 220px;
+  left: 3px;
+  height: 45px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.orangebook1 {
+  cursor: pointer;
+  position: absolute;
+  top: 220px;
+  left: 330px;
+  border: 3px solid #f47521;
+  height: 25px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.plusbook1 {
+  cursor: pointer;
+  position: absolute;
+  top: 220px;
+  left: 400px;
+  height: 25px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.more_optionbook1 {
+  cursor: pointer;
+  position: absolute;
+  top: 220px;
+  left: 470px;
+  height: 25px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.sharebook1 {
+  cursor: pointer;
+  position: absolute;
+  top: 220px;
+  left: 540px;
+  height: 25px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.description-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.watch_container_2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  line-height: 1.6px;
+  gap: 70px;
+}
+
+.watch_container_2_1 {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.8;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.watch_container_2_1.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.watch_container_2_1.expanded {
+  display: block;
+}
+
+.watch_container_2_2 {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button {
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.watch_board_conatainer{
+  position: relative;
+}
+
+.watch_board_1{
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.watch_board_button{
+  position: absolute;
+  top: 66px;
+  right: 67px;
+  background-color: goldenrod;
+  height: 46px;
+  width: 198px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.watch_eps{
+  display: flex;
+  margin-top: 50px;
+}
+
+.watch_eps_1{
+  display: flex;
+  gap: 550px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.wacth_ep-title{
+  padding-top: 8px;
+  width: 500px;
+}
+
+.watch2_inrow{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.watch2_inrow p:nth-child(1):hover{
+  background-color: #1a1a1a;
+  display: inline-block;
+}
+
+.watch2_inrow p:nth-child(2):hover{
+  background-color: #1a1a1a;
+  display: inline-block;
+}
+
+/* FIXED: Episode cards with centered content */
+.watch_videocard{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* FIXED: Center episode numbers and content in video cards */
+.watch_videocard > * {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.episode-number,
+.episode-title,
+.episode-image {
+  text-align: center !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.watch_showmore{
+  height: 40px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1b2d36;
+  border-radius: 3px;
+  border: none;
+  transition: background-color 1s ease;
+}
+
+.watch_showmore:hover{
+  background-color: #2b4858;
+}
+
+.watch_gallery{
+  margin-top: 25px;
+  margin-left: -20px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+/* Global fixes */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #000000 !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1024px) {
+  .watch_container_1_1 {
+    margin-left: 40px;
+    width: calc(100% - 80px);
+  }
+
+  .watch_container_2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .watch_eps_1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .watch2_inrow {
+    align-self: flex-end;
+  }
+
+  .watch1 {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .orangebook1, .plusbook1, .more_optionbook1, .sharebook1 {
+    position: static;
+    margin-right: 10px;
+  }
+
+  .watch_button_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .watch_showmore {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .watch_gallery {
+    margin-left: 0;
+  }
+
+  .watch_board_button {
+    right: 20px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .watch_videocard {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Keep stars in one row for tablet */
+  .star-rating {
+    flex-direction: row !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .star-line-1,
+  .star-line-2 {
+    margin-top: 0;
+    margin-right: 5px;
+  }
+
+  .star_mes {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .watch_container_1 {
+    height: 350px;
+  }
+
+  .watch_container_1_1 {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    top: 30px;
+  }
+
+  .watch_title {
+    font-size: 32px;
+  }
+
+  .watch_subtitle {
+    margin-top: 40px;
+  }
+
+  /* Keep stars in one row for mobile */
+  .star-rating {
+    flex-direction: row !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .star-line-1,
+  .star-line-2 {
+    margin-top: 0;
+    margin-right: 5px;
+  }
+
+  .star_mes {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+
+  .watch1 {
+    height: 40px;
+    font-size: 18px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .orangebook1, .plusbook1, .more_optionbook1, .sharebook1 {
+    height: 22px;
+    padding: 6px;
+  }
+
+  .watch_showmore {
+    width: 90%;
+  }
+
+  .watch_videocard {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .watch_gallery {
+    margin-left: 0;
+  }
+
+  .watch_board_button {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .watch_board_conatainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .watch_container_1 {
+    height: 280px;
+  }
+
+  .watch_container_1_1 {
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    top: 20px;
+  }
+
+  .watch_title {
+    font-size: 24px;
+  }
+
+  .watch_subtitle {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .star_custom {
+    font-size: 28px !important;
+  }
+
+  /* Keep stars in one row for small mobile */
+  .star-rating {
+    flex-direction: row !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .star-line-1,
+  .star-line-2 {
+    margin-top: 0;
+    margin-right: 3px;
+  }
+
+  .star_mes {
+    padding-top: 0;
+    padding-left: 8px;
+    font-size: 14px;
+  }
+
+  .watch1 {
+    height: 38px;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .orangebook1, .plusbook1, .more_optionbook1, .sharebook1 {
+    height: 18px;
+    padding: 4px;
+  }
+
+  .watch_showmore {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .watch_eps_1 {
+    gap: 10px;
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+
+  .wacth_ep-title {
+    width: 100%;
+  }
+
+  .watch_videocard {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .watch_gallery {
+    margin-left: 0;
+  }
+}

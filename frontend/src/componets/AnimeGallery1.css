@@ -1,0 +1,112 @@
+.anime-gallery-container {
+  position: relative;
+  width: 100vw; /* Use full screen width */
+  overflow: hidden; /* Hide horizontal scrollbar for the container */
+  display: flex;
+  justify-content: flex-end; /* Stick content to the right */
+  /* Removed fixed height from here — cards will define overall height */
+}
+
+/* Base Styles for the Anime Gallery */
+.anime-gallery {
+  display: flex;
+  overflow-x: auto;
+  padding: 0.625rem;
+  gap: 0.9375rem;
+  scroll-behavior: smooth;
+  width: max-content; /* Let the content define width */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.anime-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/* Anime Card Style */
+.anime-card {
+  flex: 0 0 12.5rem;
+  height: 27rem; /* Desktop card height */
+}
+
+.anime-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Navigation Buttons */
+.buti1,
+.buti2 {
+  position: absolute;
+  background-color: rgba(26, 26, 26, 0.8);
+  width: 5rem;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0; /* Make sure buttons are aligned vertically */
+}
+
+.buti1 {
+  left: 1350px; /* Same as original */
+}
+
+.buti2 {
+  left: 0;
+}
+
+/* Hover effect */
+.buti1:hover,
+.buti2:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  /* No changes */
+}
+
+@media (max-width: 699.98px) {
+  .buti1,
+  .buti2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .anime-card {
+    flex: 0 0 10rem;
+    height: 23.5rem; /* Matches original container height */
+  }
+  .buti1,
+  .buti2 {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .anime-card {
+    flex: 0 0 9.375rem;
+    height: 22.109375rem; /* Matches original */
+  }
+  .buti1,
+  .buti2 {
+    width: 3.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-card {
+    flex: 0 0 8.5rem;  /* bigger than before */
+    height: 13rem;     /* increased height for better visibility */
+  }
+}
+
+@media (max-width: 400px) {
+  .anime-card {
+    flex: 0 0 7.5rem;   /* bigger than before */
+    height: 11.5rem;    /* increased */
+  }
+}
